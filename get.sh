@@ -13,6 +13,6 @@ do
     sleep 120
   fi
   date
-  echo "Sleep 60"
-  sleep 60
+  echo "Sleep 300"
+  sleep 300
 done
