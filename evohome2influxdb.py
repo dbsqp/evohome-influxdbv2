@@ -31,13 +31,13 @@ influxdb2_org=os.getenv('INFLUXDB2_ORG', "Home")
 influxdb2_token=os.getenv('INFLUXDB2_TOKEN', "")
 influxdb2_bucket=os.getenv('INFLUXDB2_BUCKET', "DEV")
 
-influxdb2_ssl_str=os.getenv('INFLUXDB2_SSL', "False")
+influxdb2_ssl_str=os.getenv('INFLUXDB2_SSL')
 if influxdb2_ssl_str is not None:
     influxdb2_ssl = influxdb2_ssl_str.lower() == "true"
 else:
     influxdb2_ssl = False
 
-influxdb2_ssl_verify_str=os.getenv('INFLUXDB2_SSL_VERIFY', "False")
+influxdb2_ssl_verify_str=os.getenv('INFLUXDB2_SSL_VERIFY')
 if influxdb2_ssl_verify_str is not None:
     influxdb2_ssl_verify = influxdb2_ssl_verify_str.lower() == "true"
 else:
